@@ -1,6 +1,5 @@
 function main() {
 
-    //=SUM( VLOOKUP(D2, fantasy_scores!A2:C76, 3, false),  VLOOKUP(E2, fantasy_scores!A2:C76, 3, false),  VLOOKUP(F2, fantasy_scores!A2:C76, 3, false),  VLOOKUP(G2, fantasy_scores!A2:C76, 3, false), VLOOKUP(H2, fantasy_scores!A2:C76, 3, false))
     const firstRow = 3
     const scoreRow = 3
     const requiredRows = 18

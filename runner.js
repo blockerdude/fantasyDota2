@@ -1,8 +1,6 @@
-// var XMLHttpRequest = require('xhr2');
 import fetch from "node-fetch";
 import fs from 'fs'
 import {calculateFantasyForPlayer} from './playerCalcs.js'
-// var fetch = require('node-fetch')
 
 
 async function fetchGameByID(matchID, apiKey) {
@@ -121,7 +119,6 @@ async function processForSeries(seriesIDs, expectedPlayersMap, unexpectedPlayers
         saveMatchFile(game)
     }
 }
-
 
 main().then(res => {
     console.log('done', res)
