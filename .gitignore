@@ -1,0 +1,18 @@
+# Dependency directories
+node_modules/
+
+# Saved games
+game_responses/
+
+# Outputs
+
+run_results/
+
+# players input
+playerList.json
+
+# series input
+series.json
+
+# secrets
+secrets.json
