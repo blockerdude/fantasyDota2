@@ -42,7 +42,7 @@ function loadExpectedPlayers() {
 function printResultsForSpreadSheet(results) {
     console.log("-----------------------------------------------")
     for(let i=0; i<results.length; i++) {
-        console.log(results[i].score || '-')
+        console.log(results[i].score || '0')
     }
     console.log("-----------------------------------------------")
 
@@ -75,10 +75,18 @@ async function main() {
         let curPlayer = expectedPlayers[j]
         let foundResult = expectedPlayersMap[curPlayer.id]
         let tally = 0
+        let gameCount = 0
         for(const [key, value] of Object.entries(foundResult)) {
             tally += value
+            gameCount ++
         }
-        curPlayer.score = tally
+        if (gameCount == 2) {
+            curPlayer.score = tally
+        } else {
+            curPlayer.score = tally + ` :Played ${gameCount} games`
+        }
+        
+
     }
     
 

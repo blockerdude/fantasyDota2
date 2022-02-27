@@ -12,6 +12,7 @@ run_results/
 playerList.json
 
 # series input
+past_series/
 series.json
 
 # secrets
